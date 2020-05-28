@@ -1,0 +1,1 @@
+Small app for collect temperature from mqtt sensor
