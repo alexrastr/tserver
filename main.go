@@ -13,9 +13,9 @@ func main() {
 
 	router := gin.Default()
 
-	//лимит запросов 1 в минуту
+	//лимит запросов 5 в минуту
 	router.Use(throttle.Policy(&throttle.Quota{
-		Limit:  1,
+		Limit:  5,
 		Within: time.Minute,
 	}))
 
